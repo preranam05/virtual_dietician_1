@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Diet and Workout Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="name">Personalized Health Plans</h1>
+            <ul>
+                <li><a href="#intro">About</a></li>
+                <li><a href="#form">Get Started</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+    <div class="intro">
+        <h2>HealthHub</h2>
+        <p>Hello! I'm Prerana. As someone who's navigated personal health challenges, I understand the importance of tailored health solutions. This platform is born out of a passion to extend personalized diet and workout plans that adapt to your unique lifestyle and goals. If you're ready to transform your life, scroll down and let's get started!</p>
+        <a href="#form" class="btn">Change your life</a>
+        <div class="image-container">
+            <img src="n.png" alt="Happy Person">
+        </div>
+    </div>
+    
+    <!-- User Input Form -->
+    <section id="form" class="form-section">
+        <div class="container">
+            <h2>Fill Your Details</h2>
+            <form id="user-info-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required><br>
+
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required><br>
+
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" name="height" required><br>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select><br>
+
+                <label for="preferences">Food Preferences:</label>
+                <input type="text" id="preferences" name="preferences"><br>
+
+                <label for="allergies">Allergies:</label>
+                <input type="text" id="allergies" name="allergies"><br>
+
+                <label for="activity-level">Activity Level:</label>
+                <select id="activity-level" name="activity-level" required>
+                    <option value="1">Sedentary</option>
+                    <option value="2">Lightly Active</option>
+                    <option value="3">Moderately Active</option>
+                    <option value="4">Very Active</option>
+                    <option value="5">Extra Active</option>
+                </select><br>
+
+                <label for="goal">Goal:</label>
+                <select id="goal" name="goal" required>
+                    <option value="Weight Loss">Weight Loss</option>
+                    <option value="Fat Loss">Fat Loss</option>
+                    <option value="Muscle Gain">Muscle Gain</option>
+                    <option value="Maintenance">Maintenance</option>
+                </select><br>
+
+                <button type="submit" class="btn">Generate Plan</button>
+            </form>
+        </div>
+
+
+        <!-- Generated Plan Result Section -->
+        <div id="planResult" class="plan-result">
+            <div id="generatedPlan"></div> <!-- Plan will be inserted here -->
+            <div class="contact-info">
+                <p>Have questions? Contact us anytime!</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-info">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p><strong>Phone:</strong> +91 9845859025</p>
+            <p><strong>Email:</strong> <a href="mailto:preranamadhusudhan07@gmail.com">preranamadhusudhan07@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Personalized Health Plans. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
